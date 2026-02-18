@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#121212">
+
+</head>
+
+<body>
+
+<button onclick="toggleDarkMode()">Dark Mode</button>
+
+<div>
+  <button onclick="changeDifficulty('easy')">Easy</button>
+  <button onclick="changeDifficulty('medium')">Medium</button>
+  <button onclick="changeDifficulty('hard')">Hard</button>
+</div>
+
+<div id="board"></div>
+
+<button onclick="resetBoard()">Reset</button>
+
+<div id="mistakes">Mistakes: 0</div>
+<div id="timer">Time: 00:00</div>
+
+<div id="keypad"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

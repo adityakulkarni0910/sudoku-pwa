@@ -1,0 +1,134 @@
+<style>
+body {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+
+.highlight {
+  background-color: #e3f2fd !important;
+}
+
+.selected {
+  background-color: #2196f3 !important;
+  color: white;
+}
+
+.match {
+  background-color: #fff59d !important;
+}
+
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  width: 100%;
+  max-width: 450px;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+
+.cell {
+  border: 1px solid #333;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  background-color: white;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+
+}
+
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.prefilled {
+  background: #ddd;
+  font-weight: bold;
+  cursor: default;
+}
+
+#keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.key {
+  background: #f0f0f0;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#timer {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dark body {
+  background-color: #121212;
+  color: white;
+}
+
+.dark .cell {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid white;
+}
+
+
+
+.dark .prefilled {
+  background-color: #2a2a2a;
+  color: #ccc;
+}
+
+.dark .key {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark .highlight {
+  background-color: #2d4a66 !important;
+}
+
+.dark .selected {
+  background-color: #1565c0 !important;
+  color: white;
+}
+
+.dark .match {
+  background-color: #8d6e00 !important;
+}
+
+.dark .box-left { border-left: 3px solid white; }
+.dark .box-top { border-top: 3px solid white; }
+.dark .box-right { border-right: 3px solid white; }
+.dark .box-bottom { border-bottom: 3px solid white; }
+
+.box-left { border-left: 3px solid black; }
+.box-top { border-top: 3px solid black; }
+.box-right { border-right: 3px solid black; }
+.box-bottom { border-bottom: 3px solid black; }
+
+</style>
