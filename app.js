@@ -1,4 +1,3 @@
-<script>
 let selectedCell = null;
 let mistakes = 0;
 let seconds = 0;
@@ -502,5 +501,3 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-
-</script>
