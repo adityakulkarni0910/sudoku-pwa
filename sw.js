@@ -1,4 +1,4 @@
-const CACHE_NAME = "sudoku-v2";
+const CACHE_NAME = "sudoku-v3";
 
 const FILES_TO_CACHE = [
   "./",
@@ -23,4 +23,5 @@ self.addEventListener("fetch", event => {
     })
   );
 });
+
 
