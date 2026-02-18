@@ -218,8 +218,6 @@ cell.addEventListener("click", () => selectCell(cell));
     });
   });
 
-restoreGame();
-
   // reset timer and mistakes
   mistakes = 0;
   document.getElementById("mistakes").textContent = "Mistakes: 0";
@@ -500,4 +498,10 @@ if ("serviceWorker" in navigator) {
       .catch(err => console.log("Service Worker Error:", err));
   });
 }
+
+window.addEventListener("load", () => {
+  loadPuzzle("easy");   // default difficulty
+  restoreGame();        // restore only once
+});
+
 
